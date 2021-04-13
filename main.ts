@@ -511,7 +511,7 @@ sprites.onOverlap(SpriteKind.Late, SpriteKind.Fall, function(sprite, otherSprite
 
 forever(function () {
     if (controller.up.isPressed()) {
-        if (game.runtime() - up_press_time > 500) {
+        if (game.runtime() - up_press_time > 200) {
             myUp.setImage(assets.image`myImage10`)
             myUp.setKind(SpriteKind.Not)
             earlyup.setKind(SpriteKind.Not)
@@ -519,7 +519,7 @@ forever(function () {
         }
     }
     if (controller.left.isPressed()) {
-        if (game.runtime() - left_press_time > 500) {
+        if (game.runtime() - left_press_time > 200) {
             myLeft.setImage(assets.image`myImage9`)
             myLeft.setKind(SpriteKind.Not)
             earlyleft.setKind(SpriteKind.Not)
@@ -527,7 +527,7 @@ forever(function () {
         }
     }
     if (controller.right.isPressed()) {
-        if (game.runtime() - right_press_time > 500) {
+        if (game.runtime() - right_press_time > 200) {
             myRight.setImage(assets.image`myImage5`)
             myRight.setKind(SpriteKind.Not)
             earlyright.setKind(SpriteKind.Not)
@@ -535,7 +535,7 @@ forever(function () {
         }
     }
     if (controller.down.isPressed()) {
-        if (game.runtime() - down_press_time > 500) {
+        if (game.runtime() - down_press_time > 200) {
             myDown.setImage(assets.image`myImage3`)
             myDown.setKind(SpriteKind.Not)
             earlydown.setKind(SpriteKind.Not)
